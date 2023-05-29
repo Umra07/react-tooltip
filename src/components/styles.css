@@ -1,0 +1,42 @@
+.tooltip {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: 35px;
+}
+
+.icon {
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: rgb(201, 201, 201);
+}
+
+.text {
+  background-color: rgb(221, 221, 221);
+  padding: 1px 5px;
+  border-radius: 3px;
+  bottom: -25px;
+  position: absolute;
+  margin-inline: auto;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+
+.text-enter {
+  /*lalalalalal*/
+  opacity: 0;
+}
+.text-enter-active {
+  opacity: 1;
+}
+.text-exit {
+  opacity: 1;
+}
+.text-exit-active {
+  opacity: 0;
+}
